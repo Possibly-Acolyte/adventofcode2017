@@ -63,12 +63,6 @@ public class day3 {
                     coordinates[1]++;
                     list.get(coordinates[0]).set(coordinates[1], calculateValue(list, coordinates));
                     if(list.get(coordinates[0]).get(coordinates[1]) > input){
-                        for(ArrayList<Integer> print : list){
-                            for(int nr : print){
-                                System.out.print(" " + nr + " ");
-                            } 
-                            System.out.println("");
-                        }
                         return list.get(coordinates[0]).get(coordinates[1]);
                     }
                     if(list.get(coordinates[0]-1).get(coordinates[1]) == 0){
@@ -83,12 +77,6 @@ public class day3 {
                     coordinates[1]--;
                     list.get(coordinates[0]).set(coordinates[1], calculateValue(list, coordinates));
                     if(list.get(coordinates[0]).get(coordinates[1]) > input){
-                        for(ArrayList<Integer> print : list){
-                            for(int nr : print){
-                                System.out.print(" " + nr + " ");
-                            } 
-                            System.out.println("");
-                        }
                         return list.get(coordinates[0]).get(coordinates[1]);
                     }                    
                     if(list.get(coordinates[0]+1).get(coordinates[1]) == 0){
@@ -103,12 +91,6 @@ public class day3 {
                     coordinates[0]--;
                     list.get(coordinates[0]).set(coordinates[1], calculateValue(list, coordinates));
                     if(list.get(coordinates[0]).get(coordinates[1]) > input){
-                        for(ArrayList<Integer> print : list){
-                            for(int nr : print){
-                                System.out.print(" " + nr + " ");
-                            } 
-                            System.out.println("");
-                        }
                         return list.get(coordinates[0]).get(coordinates[1]);
                     }                    
                     if(list.get(coordinates[0]).get(coordinates[1]-1) == 0){
@@ -123,12 +105,6 @@ public class day3 {
                     coordinates[0]++;
                     list.get(coordinates[0]).set(coordinates[1], calculateValue(list, coordinates));
                     if(list.get(coordinates[0]).get(coordinates[1]) > input){
-                        for(ArrayList<Integer> print : list){
-                            for(int nr : print){
-                                System.out.print(" " + nr + " ");
-                            } 
-                            System.out.println("");
-                        }
                         return list.get(coordinates[0]).get(coordinates[1]);
                     }
                     
